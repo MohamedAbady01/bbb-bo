@@ -1,7 +1,8 @@
+gradio
+fastapi
 aiohttp
 aiofiles
 nest_asyncio
-gradio
 playwright
 gspread
 oauth2client
