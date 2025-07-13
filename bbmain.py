@@ -31,5 +31,9 @@ def run_app():
     demo.launch()
 
 
-if __name__ == "__main__":
-    run_app()
+gradio_app = run_app()
+
+
+# Mount to FastAPI
+app = FastAPI()
+app = mount_gradio_app(app, gradio_app, path="/")
